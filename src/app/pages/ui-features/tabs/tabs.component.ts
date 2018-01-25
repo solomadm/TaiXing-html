@@ -31,11 +31,11 @@ export class TabsComponent {
 
   tabs: any[] = [
     {
-      title: 'Route tab #1',
+      title: 'Sales Information',
       route: '/pages/ui-features/tabs/tab1',
     },
     {
-      title: 'Route tab #2',
+      title: 'Purchase Information',
       route: '/pages/ui-features/tabs/tab2',
     },
   ];
