@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {SmartTableService} from '../../../@core/data/smart-table.service';
 
 @Component({
   selector: 'ngx-tab1',
