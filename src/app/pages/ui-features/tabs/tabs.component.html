@@ -1,6 +1,5 @@
 <div class="row">
 
-
   <div class="col-md-12">
     <nb-card size="full">
       <nb-tabset fullWidth>
@@ -184,238 +183,269 @@
                   </nb-tab>
 
                   <nb-tab tabTitle="POS Terminal Setup">
+
+
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12 col-lg-12">
+                        <nb-card size="full">
+                          <nb-tabset>
+                            <nb-tab tabTitle="POS General">
+
+                              <div class="row">
+                                <div class="col-md-6">
 
 
-                        <nb-card>
-                          <nb-card-header>Item Type</nb-card-header>
-                          <nb-card-body>
-                            <form class="form-horizontal">
-                              <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-10 form-control-label">Taxable when Sold</label>
-                                <div class="col-sm-2">
-                                  <nb-checkbox></nb-checkbox>
+                                  <nb-card>
+                                    <nb-card-header>Item Type</nb-card-header>
+                                    <nb-card-body>
+                                      <form class="form-horizontal">
+                                        <div class="form-group row">
+                                          <label for="inputEmail3" class="col-sm-10 form-control-label">Taxable when Sold</label>
+                                          <div class="col-sm-2">
+                                            <nb-checkbox></nb-checkbox>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label for="inputPassword3" class="col-sm-3 form-control-label">Description</label>
+                                          <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputPassword3" value="Product 2">
+                                          </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                          <label for="inputPassword3" class="col-sm-3 form-control-label">Price Entity</label>
+                                          <div class="col-sm-9">
+                                            <select class="form-control">
+                                              <option>Preset</option>
+                                              <option>Department 2</option>
+                                              <option>Department 3</option>
+                                              <option>Department 4</option>
+                                              <option>Department 5</option>
+                                            </select>
+                                          </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                          <div class="col-md-10 offset-md-1">
+                                            <nb-checkbox> Condiment Y/N</nb-checkbox>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-md-10 offset-md-1">
+                                            <nb-checkbox checked> Weighed Item (Scale)</nb-checkbox>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label for="inputPassword3" class="col-sm-2 offset-md-1 form-control-label">Item Tare</label>
+                                          <div class="col-sm-3 input-group-sm">
+                                            <input type="number" class="form-control" id="inputPassword3" value="-1">
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <p>(default: -1)</p>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-md-10 offset-md-1">
+                                            <nb-checkbox> Total % Discount Applies</nb-checkbox>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-md-10 offset-md-1">
+                                            <nb-checkbox checked> Modified</nb-checkbox>
+                                          </div>
+                                        </div>
+
+                                      </form>
+                                    </nb-card-body>
+                                  </nb-card>
+
+
                                 </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-3 form-control-label">Description</label>
-                                <div class="col-sm-9">
-                                  <input type="text" class="form-control" id="inputPassword3" value="Product 2">
+                                <div class="col-md-6">
+
+
+                                  <nb-card>
+                                    <nb-card-header>Condiment Table / Condiment Chain</nb-card-header>
+                                    <nb-card-body>
+                                      <form class="form-horizontal">
+                                        <div class="form-group row">
+
+                                          <div class="col-md-6">
+                                            <label class="custom-control custom-radio">
+                                              <input type="radio" class="custom-control-input" name="customRadio" checked>
+                                              <span class="custom-control-indicator"></span>
+                                              <span class="custom-control-description">Condiment Table</span>
+                                            </label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="custom-control custom-radio">
+                                              <input type="radio" class="custom-control-input" name="customRadio1" >
+                                              <span class="custom-control-indicator"></span>
+                                              <span class="custom-control-description">Condiment Chain</span>
+                                            </label>
+                                          </div>
+
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-sm-12">
+                                            <div class="checkbox">
+                                              <nb-checkbox>Automatically Show Table</nb-checkbox>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                          <div class="col-sm-10">
+                                            <select class="form-control">
+                                              <option>&nbsp;</option>
+                                              <option>Department 2</option>
+                                              <option>Department 3</option>
+                                              <option>Department 4</option>
+                                              <option>Department 5</option>
+                                            </select>
+                                          </div>
+
+                                          <div class="col-sm-2">
+                                            <button class="btn btn-warning"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </nb-card-body>
+                                  </nb-card>
+
+
+                                  <nb-card>
+                                    <nb-card-header>Printing</nb-card-header>
+                                    <nb-card-body>
+                                      <form class="form-horizontal">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 1</label>
+                                              <div class="col-sm-6">
+                                                <input type="number" class="form-control" id="inputPassword3" value="0">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">RM 1</label>
+                                              <div class="col-sm-6">
+                                                <input type="number" class="form-control" id="inputPassword3" value="0">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 2</label>
+                                              <div class="col-sm-6">
+                                                <input type="number" class="form-control" id="inputPassword3" value="0">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">RM 2</label>
+                                              <div class="col-sm-6">
+                                                <input type="number" class="form-control" id="inputPassword3" value="0">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 3</label>
+                                              <div class="col-sm-6">
+                                                <input type="number" class="form-control" id="inputPassword3" value="0">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 4</label>
+                                              <div class="col-sm-6">
+                                                <input type="number" class="form-control" id="inputPassword3" value="0">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                          <div class="col-sm-2">
+                                            <p style="margin-top: 16px;">Print Group</p>
+                                          </div>
+
+                                          <div class="col-sm-8">
+                                            <select class="form-control">
+                                              <option>&nbsp;</option>
+                                              <option>Department 2</option>
+                                              <option>Department 3</option>
+                                              <option>Department 4</option>
+                                              <option>Department 5</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <button class="btn btn-warning"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
+                                          </div>
+                                        </div>
+
+                                        <div class="form-group row">
+
+                                          <div class="col-sm-2">
+                                            <p style="margin-top: 16px;">KP Label</p>
+                                          </div>
+
+                                          <div class="col-sm-8">
+                                            <select class="form-control">
+                                              <option>&nbsp;</option>
+                                              <option>Department 2</option>
+                                              <option>Department 3</option>
+                                              <option>Department 4</option>
+                                              <option>Department 5</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <button class="btn btn-warning"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
+                                          </div>
+                                        </div>
+
+                                      </form>
+                                    </nb-card-body>
+                                  </nb-card>
+
                                 </div>
                               </div>
 
-                              <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-3 form-control-label">Price Entity</label>
-                                <div class="col-sm-9">
-                                  <select class="form-control">
-                                    <option>Preset</option>
-                                    <option>Department 2</option>
-                                    <option>Department 3</option>
-                                    <option>Department 4</option>
-                                    <option>Department 5</option>
-                                  </select>
-                                </div>
-                              </div>
+                            </nb-tab>
 
-                              <div class="form-group row">
-                                <div class="col-md-10 offset-md-1">
-                                  <nb-checkbox> Condiment Y/N</nb-checkbox>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <div class="col-md-10 offset-md-1">
-                                  <nb-checkbox checked> Weighed Item (Scale)</nb-checkbox>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 offset-md-1 form-control-label">Item Tare</label>
-                                <div class="col-sm-3 input-group-sm">
-                                  <input type="number" class="form-control" id="inputPassword3" value="-1">
-                                </div>
-                                <div class="col-sm-3">
-                                  <p>(default: -1)</p>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <div class="col-md-10 offset-md-1">
-                                  <nb-checkbox> Total % Discount Applies</nb-checkbox>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <div class="col-md-10 offset-md-1">
-                                  <nb-checkbox checked> Modified</nb-checkbox>
-                                </div>
-                              </div>
 
-                            </form>
-                          </nb-card-body>
+                            <nb-tab tabTitle="Member Groups">
+                              <span>Content #2</span>
+                            </nb-tab>
+
+
+                            <nb-tab tabTitle="Image">
+                              <span>Content #3</span>
+                            </nb-tab>
+
+
+                            <nb-tab tabTitle="Advanced">
+                              <span>Content #3</span>
+                            </nb-tab>
+
+                          </nb-tabset>
                         </nb-card>
-
-
-                      </div>
-                      <div class="col-md-6">
-
-
-                        <nb-card>
-                          <nb-card-header>Condiment Table / Condiment Chain</nb-card-header>
-                          <nb-card-body>
-                            <form class="form-horizontal">
-                              <div class="form-group row">
-
-                                <div class="col-md-6">
-                                  <label class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" name="customRadio" checked>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Condiment Table</span>
-                                  </label>
-                                </div>
-                                <div class="col-md-6">
-                                  <label class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" name="customRadio1" >
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Condiment Chain</span>
-                                  </label>
-                                </div>
-
-                              </div>
-                              <div class="form-group row">
-                                <div class="col-sm-12">
-                                  <div class="checkbox">
-                                    <nb-checkbox>Automatically Show Table</nb-checkbox>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-
-                                <div class="col-sm-10">
-                                  <select class="form-control">
-                                    <option>&nbsp;</option>
-                                    <option>Department 2</option>
-                                    <option>Department 3</option>
-                                    <option>Department 4</option>
-                                    <option>Department 5</option>
-                                  </select>
-                                </div>
-
-                                <div class="col-sm-2">
-                                  <button class="btn btn-warning"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
-                                </div>
-                              </div>
-                            </form>
-                          </nb-card-body>
-                        </nb-card>
-
-
-                        <nb-card>
-                          <nb-card-header>Printing</nb-card-header>
-                          <nb-card-body>
-                            <form class="form-horizontal">
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 1</label>
-                                    <div class="col-sm-6">
-                                      <input type="number" class="form-control" id="inputPassword3" value="0">
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">RM 1</label>
-                                    <div class="col-sm-6">
-                                      <input type="number" class="form-control" id="inputPassword3" value="0">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 2</label>
-                                    <div class="col-sm-6">
-                                      <input type="number" class="form-control" id="inputPassword3" value="0">
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">RM 2</label>
-                                    <div class="col-sm-6">
-                                      <input type="number" class="form-control" id="inputPassword3" value="0">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 3</label>
-                                    <div class="col-sm-6">
-                                      <input type="number" class="form-control" id="inputPassword3" value="0">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label style="margin-top: 16px;" for="inputPassword3" class="col-sm-3 form-control-label">KP 4</label>
-                                    <div class="col-sm-6">
-                                      <input type="number" class="form-control" id="inputPassword3" value="0">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="form-group row">
-                                <div class="col-sm-2">
-                                  <p style="margin-top: 16px;">Print Group</p>
-                                </div>
-
-                                <div class="col-sm-8">
-                                  <select class="form-control">
-                                    <option>&nbsp;</option>
-                                    <option>Department 2</option>
-                                    <option>Department 3</option>
-                                    <option>Department 4</option>
-                                    <option>Department 5</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-2">
-                                  <button class="btn btn-warning"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
-                                </div>
-                              </div>
-
-                              <div class="form-group row">
-
-                                <div class="col-sm-2">
-                                  <p style="margin-top: 16px;">KP Label</p>
-                                </div>
-
-                                <div class="col-sm-8">
-                                  <select class="form-control">
-                                    <option>&nbsp;</option>
-                                    <option>Department 2</option>
-                                    <option>Department 3</option>
-                                    <option>Department 4</option>
-                                    <option>Department 5</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-2">
-                                  <button class="btn btn-warning"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
-                                </div>
-                              </div>
-
-                            </form>
-                          </nb-card-body>
-                        </nb-card>
-
                       </div>
                     </div>
+
                   </nb-tab>
 
                   <nb-tab tabTitle="Selling Locations">
