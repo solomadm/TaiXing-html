@@ -11,6 +11,8 @@ import { ModalComponent } from './modals/modal/modal.component';
 import { TypographyComponent } from './typography/typography.component';
 import { TabsComponent, Tab1Component, Tab2Component } from './tabs/tabs.component';
 import { SearchComponent } from './search-fields/search-fields.component';
+import {Ng2SmartTableModule} from 'ng2-smart-table';
+import {SmartTableService} from '../../@core/data/smart-table.service';
 
 const components = [
   UiFeaturesComponent,
@@ -30,12 +32,16 @@ const components = [
     ThemeModule,
     UiFeaturesRoutingModule,
     ButtonsModule,
+    Ng2SmartTableModule,
   ],
   declarations: [
     ...components,
   ],
   entryComponents: [
     ModalComponent,
+  ],
+  providers: [
+    SmartTableService,
   ],
 })
 export class UiFeaturesModule { }
